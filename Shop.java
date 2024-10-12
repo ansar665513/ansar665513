@@ -1,4 +1,6 @@
 import java.util.List;
+import java.net.SocketImpl;
+import java.net.SocketPermission;
 import java.util.ArrayList;
 import java.util.Scanner;
 /*
@@ -60,9 +62,10 @@ class Shop {
         Scanner s = new Scanner(System.in);
         
         do {
-            System.out.println("1: Создать список продуктов" + 
-            "2: Удалить продукт из спика" + 
-            "3: Показать список" + 
+            System.out.println("Введите следующие действия:");
+            System.err.print("1: Создать список\n" + 
+            "2: Удалить список\n" +
+            "3: Показать список\n" +
             "4: Выйти из программы");
             rezult = s.nextInt();
             switch(rezult) {
