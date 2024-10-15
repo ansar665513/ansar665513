@@ -66,7 +66,7 @@ class Shop {
             System.err.print("1: Создать список\n" + 
             "2: Удалить список\n" +
             "3: Показать список\n" +
-            "4: Выйти из программы");
+            "4: Выйти из программы\n");
             rezult = s.nextInt();
             switch(rezult) {
                 case (1): getShowList();
